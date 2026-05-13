@@ -1,0 +1,23 @@
+package com.example.controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class HomeController {
+
+    @GetMapping("/")
+    public String home() {
+        return "Home Page";
+    }
+
+
+    @GetMapping("/public")
+    public String publicPage() {
+        return "Public Page";
+    }
+
+    @GetMapping("/private")
+    public String privatePage() {
+        return "Private Page";
+    }
+}
