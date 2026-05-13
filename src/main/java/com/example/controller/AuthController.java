@@ -1,6 +1,6 @@
 package com.example.controller;
 
-import com.example.jwt.util.JwtUtil;
+import com.example.config.JwtUtil;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
